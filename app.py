@@ -11,11 +11,11 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-	return send_file("/pages/index.html")
+	return send_file("pages/index.html")
 
 @app.route('/index.css')
 def indexcss():
-	return send_file("/pages/index.css")
+	return send_file("pages/index.css")
 
 @app.route('/search', methods = ['POST'])
 def search():
