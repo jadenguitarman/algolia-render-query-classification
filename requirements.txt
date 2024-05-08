@@ -1,0 +1,5 @@
+Flask
+Gunicorn
+algoliasearch
+openai
+scikit-learn
