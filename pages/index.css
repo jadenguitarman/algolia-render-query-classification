@@ -57,13 +57,13 @@ main a:hover {text-decoration: underline;}
 
 .ais-Hits-list {
 	display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: calc((100% - 4vh)/3) calc((100% - 4vh)/3) calc((100% - 4vh)/3);
     grid-gap: 2vh;
 }
 
 @media (max-width: 700px) {
 	.ais-Hits-list {
-	    grid-template-columns: 1fr 1fr;
+	    grid-template-columns: calc(50% - 1vh) calc(50% - 1vh);
 	}
 }
 
