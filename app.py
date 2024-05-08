@@ -19,7 +19,7 @@ def indexcss():
 
 @app.route('/search', methods = ['POST'])
 def search():
-	original_query = request.form.get("query")
+	original_query = request.json.get("query")
 
 	tfidf_vectorizer = load('classifier/tfidf_vectorizer.joblib')
 	vectors = tfidf_vectorizer.transform([original_query])
